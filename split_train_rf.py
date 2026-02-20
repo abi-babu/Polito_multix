@@ -70,7 +70,7 @@ else:
 global_client_model = copy.deepcopy(global_model)
 
 # Split Federated Training
-num_rounds = 10
+num_rounds =20
 target_loss = 0.0
 lr = 1e-4
 
