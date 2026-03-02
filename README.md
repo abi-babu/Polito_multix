@@ -12,8 +12,6 @@ to support waveform prediction and multimodal fusion for e‑health applications
   - Added branches for **heatmaps**, **spectrograms**, and **early‑fusion**
 - `hydranet.py`  
   - Extended to support **waveform regression**
-- Legacy (unmodified) reference files:  
-  `hydranet1.py`, `fusion1.py`, `branch1.py`
 
 ---
 
