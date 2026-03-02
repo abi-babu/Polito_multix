@@ -50,7 +50,7 @@ Preprocessing scripts:
 - `mit_wave.py` — centralized training & evaluation  
 - `split_train_mit.py` — federated training & evaluation
 # Initial model outputs
-- 'mit_prediction.png and mit_prediction_federated.png' - the first-pass results.
+- mit_prediction.png and mit_prediction_federated.png - the first-pass results.
 - The model still requires additional training and refinement for improved performance.
 
 ---
