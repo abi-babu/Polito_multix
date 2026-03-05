@@ -18,7 +18,6 @@ class ResNetTail(ResNet):
         super(ResNetTail, self).__init__(block, layers)
 
         if pretrained:
-            print(f"Loading pretrained weights for ResNetTail...")
             # Load full pretrained model
             full_state_dict = load_state_dict_from_url(resnet_18_pretrained, progress=True)
 
@@ -30,7 +29,7 @@ class ResNetTail(ResNet):
 
             # Load the filtered state dict
             self.load_state_dict(filtered_state_dict, strict=False)
-            print(f"  Loaded {len(filtered_state_dict)} pretrained layers for layer2, layer3, layer4")
+
 
         # remove unused layers from ResNet model
         self.conv1 = None
