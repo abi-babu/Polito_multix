@@ -134,7 +134,7 @@ class RFFusionDataset(Dataset):
         
         # Load images with augmentation
         heatmap_path = self.data_dir / 'rf_heatmaps' / f"heatmap_{segment_id}.png"
-        spec_path = self.data_dir / 'rf_spec' / f"spectrogram_{segment_id}.png"
+        spec_path = self.data_dir / 'rf_spect' / f"spectrogram_{segment_id}.png"
         
         heatmap = self._load_image(heatmap_path, augment=self.augment)
         spectrogram = self._load_image(spec_path, augment=self.augment)
@@ -163,7 +163,7 @@ def main():
     config = Config()
     device = torch.device(config.device)
     print(f"Using device: {device}")
-    print(f"Fusion type: {config.fusion_type} (using dummy for respiration)")
+    print(f"Fusion type: {config.fusion_type}")
     
     # Load data
     data_dir = '.'
